@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.*;
 
-public class BuyFLowSteps {
+public class BuyFlowSteps {
 
     private MainPage mainPage = new MainPage();
     private ResultPage resultPage = new ResultPage();

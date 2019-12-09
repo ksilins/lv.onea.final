@@ -1,4 +1,4 @@
-Feature: Happy path for product purchase
+Feature: Product selection and purchase
 
   @Chrome
   Scenario: Selecting a product and proceeding to checkout
