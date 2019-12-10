@@ -17,7 +17,7 @@ public class BuyFlowSteps {
     private PaymentPage paymentPage = new PaymentPage();
     private ConfirmationPage confirmationPage = new ConfirmationPage();
 
-    @Given("I open 1a.lv site")
+    @Given("I open onea.lv site")
     public void iOpenOneaLvSite() {
         mainPage.closeAds();
         mainPage.setAcceptCookies();

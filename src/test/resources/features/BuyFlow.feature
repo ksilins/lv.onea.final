@@ -2,7 +2,7 @@ Feature: Product selection and purchase
 
   @Chrome
   Scenario: Selecting a product and proceeding to checkout
-    Given I open 1a.lv site
+    Given I open onea.lv site
     And I search for: Spēļu konsoles
     And choose Sony product with most stars
     And open item number 3
