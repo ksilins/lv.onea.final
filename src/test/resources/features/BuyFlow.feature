@@ -1,6 +1,6 @@
 Feature: Product selection and purchase
 
-  @Chrome
+  @ChromeHeadless
   Scenario: Selecting a product and proceeding to checkout
     Given I open onea.lv site
     And I search for: Spēļu konsoles
@@ -9,6 +9,6 @@ Feature: Product selection and purchase
     When I add item and go to cart
     And proceed to check out unregistered
     And choose to get item in office
-    And choose to pay with cash
+    And choose to pay with money transfer
     Then order data is correct
 

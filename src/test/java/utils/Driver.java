@@ -18,7 +18,6 @@ public class Driver {
         options.addArguments("--disable-notifications");
 
         webDriver = new ChromeDriver(options);
-        webDriver.manage().window().maximize();
         webDriver.get("https://www.1a.lv/");
     }
 

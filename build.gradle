@@ -17,6 +17,12 @@ dependencies {
     testCompile group: 'io.cucumber', name: 'cucumber-java', version: '4.8.0'
     testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '4.8.0'
     testCompile group: 'org.assertj', name: 'assertj-core', version: '3.14.0'
+    testCompile group: 'io.qameta.allure', name: 'allure-junit4', version: '2.13.2'
     compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.7.1'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.+'
+    compile group: 'org.slf4j', name: 'slf4j-nop', version: '1.7.30'
+}
+
+task generateAllureReport(type: Exec) {
+    commandLine "allure", "generate", "build/results", "--clean", "-o", "allure-report"
 }

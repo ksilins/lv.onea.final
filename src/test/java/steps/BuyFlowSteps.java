@@ -65,6 +65,12 @@ public class BuyFlowSteps {
         paymentPage.proceedToNextScreen();
     }
 
+    @And("^choose to pay with money transfer$")
+    public void chooseToPayWithMoneyTransfer() {
+        paymentPage.selectTransfer();
+        paymentPage.proceedToNextScreen();
+    }
+
     @Then("^order data is correct$")
     public void orderDataIsCorrect() {
         confirmationPage.validateOrder();
