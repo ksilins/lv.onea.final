@@ -22,7 +22,3 @@ dependencies {
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.+'
     compile group: 'org.slf4j', name: 'slf4j-nop', version: '1.7.30'
 }
-
-task generateAllureReport(type: Exec) {
-    commandLine "allure", "generate", "build/results", "--clean", "-o", "allure-report"
-}
