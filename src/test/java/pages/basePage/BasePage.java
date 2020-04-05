@@ -24,17 +24,17 @@ public class BasePage {
     }
 
     public void waitUntil(By element) {
-        WebDriverWait wait = new WebDriverWait(web(), 3);
+        WebDriverWait wait = new WebDriverWait(web(), 4);
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
 
     public void waitClick(By element) {
-        WebDriverWait wait = new WebDriverWait(web(), 3);
+        WebDriverWait wait = new WebDriverWait(web(), 4);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     public void waitGone(By element) {
-        WebDriverWait wait = new WebDriverWait(web(), 3);
+        WebDriverWait wait = new WebDriverWait(web(), 4);
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
     }
