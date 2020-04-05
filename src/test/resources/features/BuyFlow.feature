@@ -1,6 +1,6 @@
 Feature: Product selection and purchase
 
-  @ChromeHeadless
+  @Chrome
   Scenario: Selecting a product and proceeding to checkout
     Given I open onea.lv site
     And I search for: Spēļu konsoles
